@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/fleur/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/xiaomi/fleur/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/xiaomi/fleur/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/fleur/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2248:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2248 \
     vendor/xiaomi/fleur/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2248_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2248_ENUM \
@@ -1243,12 +1244,7 @@ PRODUCT_PACKAGES += \
     com.google.android.widevine.nonupdatable \
     ImsService \
     MtkGbaService \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
+    MtkTelephonyAssist \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
